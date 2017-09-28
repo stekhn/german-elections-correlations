@@ -2,7 +2,7 @@
     "globals": {
         "d3": true,
         "queue": true,
-        "topojson": true
+        "ss": true
     },
     "rules": {
         "indent": [2, 2, {"SwitchCase": 1}],

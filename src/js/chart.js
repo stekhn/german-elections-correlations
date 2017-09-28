@@ -9,17 +9,16 @@
       .defer(d3.csv, 'data/demographics.csv')
       .await(function (error, results, demographics) {
 
-        if (error) { throw error; }
+        var correlations;
 
-        results.length = 10;
-        demographics.length = 10;
+        if (error) { throw error; }
 
         results = transform(results);
         demographics = transform(demographics);
 
-        var correlations = correlate(results, demographics);
+        correlations = correlate(results, demographics);
 
-        // draw(data);
+        draw(correlations);
       });
   })();
 
@@ -49,18 +48,24 @@
 
       Object.keys(demographics).forEach(function (dem) {
 
+        // @todo: Could be nicer
         if (res !== 'id' && res !== 'name' && res !== 'state' &&
           dem !== 'id' && dem !== 'name' && dem !== 'state') {
 
+          var correlation = ss.sampleCorrelation(results[res],demographics[dem]);
+          var regression = ss.linearRegression([results[res],demographics[dem]]);
+          var regressionLine = ss.linearRegressionLine(regression);
+
           correlations.push({
-            correlation: ss.sampleCorrelation(results[res],demographics[dem]),
-            regression: ss.linearRegression(results[res],demographics[dem]),
-            xName: dem,
-            xValues: demographics[dem],
-            xDomain: d3.extent(demographics[dem]),
-            yName: res,
-            yValues: results[res],
-            yDomain: d3.extent(results[res])
+            correlation: correlation,
+            regression: regression,
+            line: regressionLine,
+            xName: res,
+            xValues: results[res],
+            xDomain: d3.extent(results[res]),
+            yName: dem,
+            yValues: demographics[dem],
+            yDomain: d3.extent(demographics[dem])
           });
         }
       });
@@ -68,9 +73,109 @@
 
     correlations.sort(function (a, b) {
 
-      return d3.ascending(a.correlation, b.correlation);
+      return d3.descending(Math.abs(a.correlation), Math.abs(b.correlation));
     });
 
     return correlations;
+  }
+
+  function draw(correlations) {
+
+    correlations.length = 4;
+
+    var width, height, margin,
+      vis, x, y, xAxis, yAxis,
+      div, svg;
+
+    width = 150;
+    height = 150;
+
+    margin = {
+      top: 20,
+      right: 30,
+      bottom: 20,
+      left: 40
+    };
+
+    vis = d3.select('#vis');
+
+    div = vis.selectAll('.chart')
+        .data(correlations)
+        .enter()
+      .append('div')
+        .attr('class', 'chart');
+
+    svg = div.append('svg')
+        .attr('width', width + margin.left + margin.right)
+        .attr('height', height + margin.top + margin.bottom);
+
+    svg.append('g')
+        .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')')
+        .each(handleEach);
+
+    function handleEach(d) {
+
+      var parent = d3.select(this);
+
+      x = d3.scaleLinear()
+        .range([0, width])
+        .domain([0, d.xDomain[1]]);
+
+      y = d3.scaleLinear()
+        .range([height, 0])
+        .domain(d.yDomain);
+
+      xAxis = d3.axisBottom(x)
+          .ticks(4);
+
+      yAxis = d3.axisLeft(y)
+          .ticks(4);
+
+      parent.append('g')
+          .call(yAxis);
+
+      parent.append('g')
+          .attr('transform', 'translate(0,' + height + ')')
+          .call(xAxis);
+
+      parent.append('g')
+          .attr('fill', function (e) {
+
+            return getColor(e.xName) || 'black';
+          })
+        .selectAll('circle')
+          .data(function (e) {
+            return e.xValues.map(function (x, i) {
+              return {
+                x: x,
+                y: e.yValues[i]
+              };
+            });
+          })
+          .enter()
+        .append('circle')
+          .attr('r', 3)
+          .attr('fill-opacity', .5)
+          .attr('cx', function (e) { return x(e.x); })
+          .attr('cy', function (e) { return y(e.y); });
+
+    }
+  }
+
+  function getColor(party) {
+
+    party = party.replace(' (%)', '');
+
+    var colors = {
+
+      'AfD': '#129ee6',
+      'Union': '#121212',
+      'FDP': '#ffdd00',
+      'SPD': '#d71f1d',
+      'Grüne': '#0a8000',
+      'Linke': '#be3075'
+    };
+
+    return colors[party];
   }
 })();
