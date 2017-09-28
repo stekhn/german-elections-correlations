@@ -129,7 +129,7 @@
 
       y = d3.scaleLinear()
         .range([height, 0])
-        .domain(d.yDomain);
+        .domain(d.yDomain[0] > 0 ? [0, d.yDomain[1]] : d.yDomain);
 
       xAxis = d3.axisBottom(x)
           .ticks(4);
