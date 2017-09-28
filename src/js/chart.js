@@ -139,16 +139,25 @@
           .call(xAxis);
 
       parent.append('g')
+        .append('line')
+        .attr('x1', x(d.xDomain[d.correlation < 0 ? 1 : 0]))
+        .attr('y1', y(d.line(d.yDomain[0])))
+        .attr('x2', x(d.xDomain[d.correlation < 0 ? 0 : 1]))
+        .attr('y2', y(d.line(d.yDomain[1])))
+        .attr('stroke', 'black')
+        .attr('stroke-width', 1);
+
+      parent.append('g')
           .attr('fill', function (e) {
 
             return getColor(e.xName) || 'black';
           })
         .selectAll('circle')
-          .data(function (e) {
-            return e.xValues.map(function (x, i) {
+          .data(function () {
+            return d.xValues.map(function (x, i) {
               return {
                 x: x,
-                y: e.yValues[i]
+                y: d.yValues[i]
               };
             });
           })
@@ -158,7 +167,6 @@
           .attr('fill-opacity', .5)
           .attr('cx', function (e) { return x(e.x); })
           .attr('cy', function (e) { return y(e.y); });
-
     }
   }
 
