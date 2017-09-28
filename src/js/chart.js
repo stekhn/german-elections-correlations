@@ -81,20 +81,20 @@
 
   function draw(correlations) {
 
-    correlations.length = 4;
+    correlations.length = 50;
 
     var width, height, margin,
       vis, x, y, xAxis, yAxis,
       div, svg;
 
-    width = 150;
-    height = 150;
+    width = 170;
+    height = 170;
 
     margin = {
-      top: 20,
-      right: 30,
+      top: 10,
+      right: 20,
       bottom: 20,
-      left: 40
+      left: 25
     };
 
     vis = d3.select('#vis');
@@ -104,6 +104,12 @@
         .enter()
       .append('div')
         .attr('class', 'chart');
+
+    div.append('p')
+        .text(function (d) {
+          return d.yName + ', Korrelation: ' +
+            (Math.round(d.correlation * 100) / 100);
+        });
 
     svg = div.append('svg')
         .attr('width', width + margin.left + margin.right)
@@ -133,19 +139,32 @@
 
       parent.append('g')
           .call(yAxis);
+        // .append('text')
+        //   .attr('y', -20)
+        //   .attr('x', -20)
+        //   .attr('dy', '.71em')
+        //   .attr('text-anchor', 'start')
+        //   .attr('fill', 'black')
+        //   .text(d.yName);
 
       parent.append('g')
           .attr('transform', 'translate(0,' + height + ')')
-          .call(xAxis);
+          .call(xAxis)
+        .append('text')
+          .attr('x', width)
+          .attr('y', -6)
+          .attr('text-anchor', 'end')
+          .attr('fill', 'black')
+          .text(d.xName);
 
-      parent.append('g')
-        .append('line')
-        .attr('x1', x(d.xDomain[d.correlation < 0 ? 1 : 0]))
-        .attr('y1', y(d.line(d.yDomain[0])))
-        .attr('x2', x(d.xDomain[d.correlation < 0 ? 0 : 1]))
-        .attr('y2', y(d.line(d.yDomain[1])))
-        .attr('stroke', 'black')
-        .attr('stroke-width', 1);
+      // parent.append('g')
+      //     .append('line')
+      //     .attr('x1', x(d.xDomain[d.correlation < 0 ? 1 : 0]))
+      //     .attr('y1', y(d.line(d.yDomain[0])))
+      //     .attr('x2', x(d.xDomain[d.correlation < 0 ? 0 : 1]))
+      //     .attr('y2', y(d.line(d.yDomain[1])))
+      //     .attr('stroke', 'black')
+      //     .attr('stroke-width', 1);
 
       parent.append('g')
           .attr('fill', function (e) {
