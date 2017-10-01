@@ -32,8 +32,10 @@
 
         var value = isNaN(row[column]) ? row[column] : parseFloat(row[column]);
 
-        map[column] = map[column] || [];
-        map[column].push(value);
+        if (value != '.') {
+          map[column] = map[column] || [];
+          map[column].push(value);
+        }
       });
     });
 
@@ -76,12 +78,12 @@
       return d3.descending(Math.abs(a.correlation), Math.abs(b.correlation));
     });
 
+    correlations.length = 50;
+
     return correlations;
   }
 
   function draw(correlations) {
-
-    correlations.length = 50;
 
     var width, height, margin,
       vis, x, y, xAxis, yAxis,
