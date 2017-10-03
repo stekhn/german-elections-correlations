@@ -1,0 +1,300 @@
+id,name,state,Union (%),SPD (%),FDP (%),Linke (%),Grüne (%),AfD (%)
+1,Flensburg - Schleswig,Schleswig-Holstein,38.19,32.62,5.02,5.66,9.79,10.7
+2,Nordfriesland - Dithmarschen Nord,Schleswig-Holstein,35.1,24.02,5.18,3.57,6.57,8.86
+3,Steinburg - Dithmarschen Süd,Schleswig-Holstein,32.63,23.35,4.79,3.91,5.9,10.48
+4,Rendsburg-Eckernförde,Schleswig-Holstein,37.57,29.05,5.06,4.01,8.53,10.77
+5,Kiel,Schleswig-Holstein,27.32,31.29,4.8,6.24,12.7,12.25
+6,Plön - Neumünster,Schleswig-Holstein,30.31,25.58,4.18,3.73,7.21,12.12
+7,Pinneberg,Schleswig-Holstein,44.83,34.47,6.14,5.55,9.52,11.78
+8,Segeberg - Stormarn-Mitte,Schleswig-Holstein,46.17,34.05,6.5,5.67,9.77,12.18
+9,Ostholstein - Stormarn-Nord,Schleswig-Holstein,33.43,25.61,5,3.53,6.53,12.05
+10,Herzogtum Lauenburg - Stormarn-Süd,Schleswig-Holstein,45.82,33.58,6.77,5.58,10.32,13.87
+11,Lübeck,Schleswig-Holstein,26.28,26.2,3.65,4.96,8.49,12.61
+18,Hamburg-Mitte,Hamburg,27.98,34.69,4.02,11.28,14.1,15.99
+19,Hamburg-Altona,Hamburg,24.64,24.91,4.58,9.04,13.8,10.92
+20,Hamburg-Eimsbüttel,Hamburg,27.38,27.7,4.55,7.56,13.74,11.81
+21,Hamburg-Nord,Hamburg,36.88,30.53,6.38,6.61,12.67,11.34
+22,Hamburg-Wandsbek,Hamburg,31.53,31.34,4.08,6.9,7.89,14.01
+23,Hamburg-Bergedorf - Harburg,Hamburg,29.59,30.69,3.08,7.36,8.04,13.94
+24,Aurich - Emden,Niedersachsen,26.78,36.16,2.69,4.1,6.87,9.61
+25,Unterems,Niedersachsen,50.19,31.8,4.07,4.22,5.92,6.04
+26,Friesland - Wilhelmshaven - Wittmund,Niedersachsen,31.62,29.89,3.53,4.24,6.06,10.79
+27,Oldenburg - Ammerland,Niedersachsen,35.53,32.9,5.11,6.55,12.56,11.97
+28,Delmenhorst - Wesermarsch - Oldenburg-Land,Niedersachsen,38.98,34.14,5,5.49,8.13,10.15
+29,Cuxhaven - Stade II,Niedersachsen,37.16,28.35,3.07,3.89,5.97,7.96
+30,Stade I - Rotenburg II,Niedersachsen,40.14,27.76,3.75,3.75,6.98,10.13
+31,Mittelems,Niedersachsen,59.09,27.43,4.38,3.18,5.7,4.56
+32,Cloppenburg - Vechta,Niedersachsen,60.01,18.78,4.4,2.65,4.04,3.71
+33,Diepholz - Nienburg I,Niedersachsen,38.23,27.66,4.31,3.96,7.19,7.88
+34,Osterholz - Verden,Niedersachsen,35.64,29.52,3.26,4.99,8.53,9.59
+35,Rotenburg I - Heidekreis,Niedersachsen,33.1,23.67,3.07,3.47,6.43,8.63
+36,Harburg,Niedersachsen,40.41,26.72,4.6,4.13,8.76,13.97
+37,Lüchow-Dannenberg - Lüneburg,Niedersachsen,30.35,23.91,3.29,5.73,11.76,12
+38,Osnabrück-Land,Niedersachsen,42.94,26.28,4.11,3.6,6.88,5.89
+39,Stadt Osnabrück,Niedersachsen,37.82,26.83,3.66,4.47,9.58,6.2
+40,Nienburg II - Schaumburg,Niedersachsen,35.04,31.78,3.11,3.74,7.08,9.8
+41,Stadt Hannover I,Niedersachsen,26.71,28.29,3.76,4.98,9.78,10.85
+42,Stadt Hannover II,Niedersachsen,25.95,30.06,3.72,6.93,13.42,11.39
+43,Hannover-Land I,Niedersachsen,45,36.06,5.43,4.94,8.91,9.74
+44,Celle - Uelzen,Niedersachsen,42.69,29.22,4.03,4.41,7.51,11.26
+45,Gifhorn - Peine,Niedersachsen,40.12,36.03,3.52,4.72,7.38,8.98
+46,Hameln-Pyrmont - Holzminden,Niedersachsen,31.71,30.76,3.73,4.48,7.11,10.9
+47,Hannover-Land II,Niedersachsen,43.36,40.57,4.5,5.4,10.09,9.99
+48,Hildesheim,Niedersachsen,39.24,36.93,3.48,5.05,9.08,8.88
+49,Salzgitter - Wolfenbüttel,Niedersachsen,33.36,36.65,3.2,5.27,6.86,11.08
+50,Braunschweig,Niedersachsen,30.14,29.72,3.87,5.93,10.97,10.52
+51,Helmstedt - Wolfsburg,Niedersachsen,33.73,28.53,2.99,4.01,5.61,9.03
+52,Goslar - Northeim - Osterode,Niedersachsen,34.72,34.85,3.8,4.65,6.31,10.28
+53,Göttingen,Niedersachsen,36.73,33.87,4.15,6.49,12.5,10.37
+54,Bremen I,Bremen,34.4,37.66,4.46,11.52,15.84,11.33
+55,Bremen II - Bremerhaven,Bremen,25.65,35.3,2.51,9.2,9.07,14.67
+87,Aachen I,Nordrhein-Westfalen,30.33,22.68,5.23,6.36,10.88,8.51
+88,Aachen II,Nordrhein-Westfalen,41.29,32.93,4.95,6.56,6.36,8.05
+89,Heinsberg,Nordrhein-Westfalen,40.72,21.72,4.07,4.3,4.57,7.11
+90,Düren,Nordrhein-Westfalen,39.55,26.49,4.42,5.05,5.43,9.02
+91,Rhein-Erft-Kreis I,Nordrhein-Westfalen,47.01,34.29,6.37,5.77,7.63,8.82
+92,Euskirchen - Rhein-Erft-Kreis II,Nordrhein-Westfalen,49.21,29.25,7.23,5.65,7.81,9.09
+93,Köln I,Nordrhein-Westfalen,27.31,25.37,4.5,6.67,10,12.24
+94,Köln II,Nordrhein-Westfalen,40.41,30,9.26,7.9,17.83,9.17
+95,Köln III,Nordrhein-Westfalen,26.71,27.54,3.95,8.07,13.01,10.52
+96,Bonn,Nordrhein-Westfalen,39.12,27.96,8.98,6.84,14.75,11.76
+97,Rhein-Sieg-Kreis I,Nordrhein-Westfalen,46.18,28.68,6.72,5.91,8.72,10.13
+98,Rhein-Sieg-Kreis II,Nordrhein-Westfalen,45.98,24.63,8.38,4.63,8.79,9.97
+99,Oberbergischer Kreis,Nordrhein-Westfalen,41.98,25.02,5.26,5.01,6.44,11.1
+100,Rheinisch-Bergischer Kreis,Nordrhein-Westfalen,45.62,27.22,7.27,5.27,9.41,10.84
+101,Leverkusen - Köln IV,Nordrhein-Westfalen,32.92,30.2,4.49,6.61,8.89,10.98
+102,Wuppertal I,Nordrhein-Westfalen,29.55,29.03,5.1,7.78,8.91,12.62
+103,Solingen - Remscheid - Wuppertal II,Nordrhein-Westfalen,38.61,29.96,6.01,6.69,7.89,11.05
+104,Mettmann I,Nordrhein-Westfalen,40.9,26.88,6.01,4.86,7.28,11.82
+105,Mettmann II,Nordrhein-Westfalen,31.28,23.39,4.62,4.14,5.23,11.4
+106,Düsseldorf I,Nordrhein-Westfalen,41.07,26.94,9.33,6.54,9.61,10.44
+107,Düsseldorf II,Nordrhein-Westfalen,31.78,25.98,4.97,6.66,8.34,11.45
+108,Neuss I,Nordrhein-Westfalen,43.25,26.52,5.86,4.73,5.83,9.03
+109,Mönchengladbach,Nordrhein-Westfalen,34.26,22.07,4.62,5.03,4.85,9.55
+110,Krefeld I - Neuss II,Nordrhein-Westfalen,41.59,25.5,6.79,4.84,6.41,8.61
+111,Viersen,Nordrhein-Westfalen,47.78,27.46,6.53,5.54,6.91,8.87
+112,Kleve,Nordrhein-Westfalen,48.45,26.93,5.66,4.56,6.14,8.09
+113,Wesel I,Nordrhein-Westfalen,37.33,33.15,4.5,5.66,6.09,9.47
+114,Krefeld II - Wesel II,Nordrhein-Westfalen,29.76,27.92,4.51,5.32,5.9,10.64
+115,Duisburg I,Nordrhein-Westfalen,22.48,29.36,2.52,5.9,5.19,17.2
+116,Duisburg II,Nordrhein-Westfalen,17.22,27.84,1.8,5.7,3.35,19.33
+117,Oberhausen - Wesel III,Nordrhein-Westfalen,27.32,37.49,2.99,7.3,5.98,14
+118,Mülheim - Essen I,Nordrhein-Westfalen,29.41,33.17,3.98,5.58,6.12,13.55
+119,Essen II,Nordrhein-Westfalen,19.01,27.82,2.26,5.43,4.74,14.92
+120,Essen III,Nordrhein-Westfalen,33.81,30.89,5.34,6.13,9.06,10.7
+121,Recklinghausen I,Nordrhein-Westfalen,25.46,29.92,2.55,5.13,4.8,13.36
+122,Recklinghausen II,Nordrhein-Westfalen,29.31,33.85,3,5.29,4.89,11.67
+123,Gelsenkirchen,Nordrhein-Westfalen,20.16,32.07,2.16,5.53,3.99,17.15
+124,Steinfurt I - Borken I,Nordrhein-Westfalen,45.32,25.57,4.63,4,5.56,5.67
+125,Bottrop - Recklinghausen III,Nordrhein-Westfalen,31.76,36.6,3.17,5.7,4.98,11.83
+126,Borken II,Nordrhein-Westfalen,50.02,23.9,4.93,3.39,5.69,5.03
+127,Coesfeld - Steinfurt II,Nordrhein-Westfalen,46.31,23.7,5.18,3.84,7.52,5.67
+128,Steinfurt III,Nordrhein-Westfalen,39.05,30.08,4.25,4.21,6.84,6.42
+129,Münster,Nordrhein-Westfalen,42.1,30.24,7.54,7.01,16.88,7.74
+130,Warendorf,Nordrhein-Westfalen,45.92,28.39,5.28,4.27,7.04,6.2
+131,Gütersloh I,Nordrhein-Westfalen,48.16,29.86,5.13,5.19,8.18,6.83
+132,Bielefeld - Gütersloh II,Nordrhein-Westfalen,39.03,36.06,4.39,9.26,12.89,9.69
+133,Herford - Minden-Lübbecke II,Nordrhein-Westfalen,39.69,35.21,4.23,5.86,7.66,9.15
+134,Minden-Lübbecke I,Nordrhein-Westfalen,36.81,30.84,4.13,4.43,6.55,8.74
+135,Lippe I,Nordrhein-Westfalen,30.36,27.13,3.55,3.96,5.68,9.75
+136,Höxter - Lippe II,Nordrhein-Westfalen,43.9,28.45,4.62,4.91,6.39,7.86
+137,Paderborn - Gütersloh III,Nordrhein-Westfalen,55.65,25.29,5.46,5.64,7.75,7.04
+138,Hagen - Ennepe-Ruhr-Kreis I,Nordrhein-Westfalen,31.95,33.23,4.11,6.11,6.1,12.42
+139,Ennepe-Ruhr-Kreis II,Nordrhein-Westfalen,27.41,31.72,3.72,5.29,7.51,11.76
+140,Bochum I,Nordrhein-Westfalen,28.92,36.58,3.65,7.48,9.13,12.53
+141,Herne - Bochum II,Nordrhein-Westfalen,21.88,34.16,2.2,6.33,5.15,14.08
+142,Dortmund I,Nordrhein-Westfalen,26.59,34.97,3.8,7.25,9.85,14.19
+143,Dortmund II,Nordrhein-Westfalen,24.65,34.66,3.2,6.58,7.05,14.07
+144,Unna I,Nordrhein-Westfalen,29.13,37.36,3.64,5.68,7.2,11.81
+145,Hamm - Unna II,Nordrhein-Westfalen,37.96,39.62,3.83,6.47,6.22,9.06
+146,Soest,Nordrhein-Westfalen,46.3,31.4,5.12,5.43,7.2,7.68
+147,Hochsauerlandkreis,Nordrhein-Westfalen,46.4,26.18,4.75,4.39,4.46,6.9
+148,Siegen-Wittgenstein,Nordrhein-Westfalen,40.03,30.85,4.56,5.55,6.19,11.9
+149,Olpe - Märkischer Kreis I,Nordrhein-Westfalen,44.47,26.15,4.79,4.43,4.81,8.61
+150,Märkischer Kreis II,Nordrhein-Westfalen,37.06,28.83,4,5.27,4.96,11.96
+167,Waldeck,Hessen,30.54,30.14,4.02,4.58,6.77,13.81
+168,Kassel,Hessen,30.11,33.14,3.9,8.52,12.38,16.49
+169,Werra-Meißner - Hersfeld-Rotenburg,Hessen,28.56,29.2,3.12,4.72,5.52,15.47
+170,Schwalm-Eder,Hessen,30.35,31.16,3.96,4.63,6.54,15.17
+171,Marburg,Hessen,29.25,26.61,3.18,5.43,8.37,12.47
+172,Lahn-Dill,Hessen,37.2,27.02,3.94,4.63,6.6,13.91
+173,Gießen,Hessen,36.77,28.2,4.7,6.18,9.19,12.6
+174,Fulda,Hessen,47.8,20.68,4.55,4.3,6.26,11.35
+175,Main-Kinzig - Wetterau II - Schotten,Hessen,32.56,21.98,4.06,4.32,6.05,15.48
+176,Hochtaunus,Hessen,36.62,21.07,6.43,3.96,7.9,16.06
+177,Wetterau I,Hessen,32.63,21.75,4.72,4.12,7.46,14.51
+178,Rheingau-Taunus - Limburg,Hessen,45.82,25.35,6.31,4.54,8.69,12.87
+179,Wiesbaden,Hessen,31.24,22.44,5.48,4.77,9.42,13.05
+180,Hanau,Hessen,30.4,22.19,4.12,4.75,6.96,15.07
+181,Main-Taunus,Hessen,41.46,21.26,8.16,3.99,9.37,15.72
+182,Frankfurt am Main I,Hessen,27.32,21.85,5.73,7.27,10.83,15.91
+183,Frankfurt am Main II,Hessen,33.12,25.75,6.83,7.95,15.04,14.42
+184,Groß-Gerau,Hessen,28.26,23.52,3.59,4.79,8.17,15.29
+185,Offenbach,Hessen,37.29,25.03,6.12,6.35,10.27,15.01
+186,Darmstadt,Hessen,38.4,31.39,5.57,7.39,15.66,14.87
+187,Odenwald,Hessen,43.71,30.04,5.58,5.89,9.69,14.05
+188,Bergstraße,Hessen,38.18,24.8,4.96,4.37,7.79,13.26
+198,Neuwied,Rheinland-Pfalz,48.56,30.42,4.99,5.58,6.64,11.23
+199,Ahrweiler,Rheinland-Pfalz,42.76,21.58,4.92,4.09,5.78,10.67
+200,Koblenz,Rheinland-Pfalz,39.48,23.79,4.73,4.58,6.76,10.45
+201,Mosel/Rhein-Hunsrück,Rheinland-Pfalz,39.03,19.42,4.95,3.82,4.52,8.49
+202,Kreuznach,Rheinland-Pfalz,33.2,25.34,4.5,4.66,5.12,11.59
+203,Bitburg,Rheinland-Pfalz,38.09,16.3,4.44,3.2,4.46,6.97
+204,Trier,Rheinland-Pfalz,37.92,22.67,4.26,5.41,8.19,9.42
+205,Montabaur,Rheinland-Pfalz,43.03,26.46,4.98,4.81,6,11.33
+206,Mainz,Rheinland-Pfalz,46.31,32.13,7.9,6.63,15.77,11.85
+207,Worms,Rheinland-Pfalz,35.87,27.19,5.39,4.61,7.64,14.21
+208,Ludwigshafen/Frankenthal,Rheinland-Pfalz,36.99,28.01,4.95,5.32,6.87,15.52
+209,Neustadt - Speyer,Rheinland-Pfalz,44.24,26.13,5.81,4.9,8.66,11.25
+210,Kaiserslautern,Rheinland-Pfalz,35.72,32.52,4.55,7.54,7.12,12.38
+211,Pirmasens,Rheinland-Pfalz,34.16,21.86,3.95,5.09,3.71,9.95
+212,Südpfalz,Rheinland-Pfalz,41.41,25.24,6.02,4.69,8.2,11.4
+258,Stuttgart I,Baden-Württemberg,35.36,19.78,7.81,5.87,16.52,11.06
+259,Stuttgart II,Baden-Württemberg,32.57,18.97,5.55,5.54,11.42,11.56
+260,Böblingen,Baden-Württemberg,55.24,23.54,8.41,5.13,12.21,10.89
+261,Esslingen,Baden-Württemberg,35.86,17.56,4.89,3.65,9.64,10.13
+262,Nürtingen,Baden-Württemberg,45.35,19.61,6.77,4.07,11.48,10.43
+263,Göppingen,Baden-Württemberg,37.39,17.7,4.76,3.47,8.26,13.75
+264,Waiblingen,Baden-Württemberg,48.22,21.22,8.3,4.77,10.9,11.83
+265,Ludwigsburg,Baden-Württemberg,44.19,21.38,6.93,4.73,11.73,11.62
+266,Neckar-Zaber,Baden-Württemberg,49.41,22.94,7.35,4.53,11.55,12.22
+267,Heilbronn,Baden-Württemberg,48.9,23.61,6.8,5.07,9.13,11.8
+268,Schwäbisch Hall - Hohenlohe,Baden-Württemberg,45.34,19.44,6.45,4.69,9.74,10.71
+269,Backnang - Schwäbisch Gmünd,Baden-Württemberg,38.74,16.31,4.62,3.4,7.26,11.68
+270,Aalen - Heidenheim,Baden-Württemberg,49.43,22.32,4.52,4.66,8.42,9.14
+271,Karlsruhe-Stadt,Baden-Württemberg,34.73,21.03,5.59,5.56,13.86,14.94
+272,Karlsruhe-Land,Baden-Württemberg,45.95,20.8,5.95,4.02,9.45,12.84
+273,Rastatt,Baden-Württemberg,44.67,18.7,5.25,3.77,8.23,11.7
+274,Heidelberg,Baden-Württemberg,38.8,24.23,7.24,5.86,15.31,16.39
+275,Mannheim,Baden-Württemberg,29.63,23.26,4.62,6.37,9.37,17.12
+276,Odenwald - Tauber,Baden-Württemberg,49.5,18.84,4.95,3.97,6.84,10.05
+277,Rhein-Neckar,Baden-Württemberg,39.76,20.2,5.88,4.33,8.66,13.75
+278,Bruchsal - Schwetzingen,Baden-Württemberg,41.5,19.21,5.06,3.96,7.28,13.05
+279,Pforzheim,Baden-Württemberg,44.2,19.79,6.95,4.51,8.77,16.03
+280,Calw,Baden-Württemberg,45.61,15.74,5.72,3.7,6.81,12.3
+281,Freiburg,Baden-Württemberg,36.73,22.9,5.02,8.16,20.57,10.82
+282,Lörrach - Müllheim,Baden-Württemberg,44.13,21.99,5.7,4.89,12.82,11.66
+283,Emmendingen - Lahr,Baden-Württemberg,43.12,20,4.82,4.37,11.39,9.85
+284,Offenburg,Baden-Württemberg,42.94,17.09,5.07,4.21,9.53,11.23
+285,Rottweil - Tuttlingen,Baden-Württemberg,45.44,15.41,5.62,3.49,6.46,11.25
+286,Schwarzwald-Baar,Baden-Württemberg,36.05,13.95,4.32,3.03,6.61,11.56
+287,Konstanz,Baden-Württemberg,39.57,18.37,6.68,4.54,11.48,12.63
+288,Waldshut,Baden-Württemberg,38.98,15.02,4.55,3.41,8.71,9.55
+289,Reutlingen,Baden-Württemberg,42.58,17.78,6.5,4.41,10.08,12.06
+290,Tübingen,Baden-Württemberg,38.53,18.94,5.11,6.11,13.68,11.01
+291,Ulm,Baden-Württemberg,50.03,20.81,5.39,4.41,10.6,9.75
+292,Biberach,Baden-Württemberg,42.06,11.09,3.64,2.54,6.78,7.51
+293,Bodensee,Baden-Württemberg,38.57,14.4,5.03,3.5,9.31,9.18
+294,Ravensburg,Baden-Württemberg,41.87,14.48,4.39,3.59,10.32,7.73
+295,Zollernalb - Sigmaringen,Baden-Württemberg,43.06,13.97,4.6,3.34,6.85,8.91
+213,Altötting,Bayern,40.46,10.46,2.72,2.02,3.98,6.92
+214,Erding - Ebersberg,Bayern,45.35,14.74,4.56,2.6,7.84,10.15
+215,Freising,Bayern,49.13,15.71,4.51,3.13,8.96,9.41
+216,Fürstenfeldbruck,Bayern,58.8,21.58,5.89,3.56,10.33,10.38
+217,Ingolstadt,Bayern,60.26,18.6,4.61,3.84,6.69,6.29
+218,München-Nord,Bayern,35.55,23.87,7.95,4.41,13.18,12.44
+219,München-Ost,Bayern,41.3,24.39,8.58,4.44,13.52,11.77
+220,München-Süd,Bayern,36.17,22.96,6.68,4.57,13.35,12.19
+221,München-West/Mitte,Bayern,39.98,25.59,8,5.17,16.85,11.29
+222,München-Land,Bayern,55.72,23.34,10.15,3.35,11.8,10.39
+223,Rosenheim,Bayern,54.51,14.92,5.01,2.92,8.49,8.9
+224,Starnberg,Bayern,58.02,17.02,8.31,2.99,10.22,10.9
+225,Traunstein,Bayern,50.02,13,3.82,2.61,7.68,5.72
+226,Weilheim,Bayern,59.69,17.64,5.89,3.5,9.97,10.08
+227,Deggendorf,Bayern,32.67,9.61,2.21,1.93,2.53,7.22
+228,Landshut,Bayern,57.32,16.91,4.97,3.21,7.11,6.64
+229,Passau,Bayern,39.07,13.45,3.24,2.74,4.29,7.2
+230,Rottal-Inn,Bayern,37.66,9.73,2.61,1.71,3.11,6.15
+231,Straubing,Bayern,39.77,11.07,2.9,2.05,2.69,6.85
+232,Amberg,Bayern,49.85,18.08,3.51,3.14,5.6,6.59
+233,Regensburg,Bayern,51.39,20.48,4.88,4.12,9.81,8.48
+234,Schwandorf,Bayern,47.59,16.85,2.93,2.8,3.69,5.98
+235,Weiden,Bayern,38.68,16.49,2.46,2.48,3.16,6.83
+236,Bamberg,Bayern,38.31,15.52,3.78,3.2,7.01,8.47
+237,Bayreuth,Bayern,35.39,16.61,3.45,2.36,4.86,7.8
+238,Coburg,Bayern,32.1,19.12,2.78,2.75,3.93,9.17
+239,Hof,Bayern,34.38,19.55,2.75,3.5,3.93,9.25
+240,Kulmbach,Bayern,39.45,16.2,2.81,2.73,3.98,7.57
+241,Ansbach,Bayern,48.96,22.84,4.74,3.96,8.57,7.57
+242,Erlangen,Bayern,34.82,20.32,4.63,3.64,9.58,9.99
+243,Fürth,Bayern,47.06,27.69,5.14,5.49,10.04,10.35
+244,Nürnberg-Nord,Bayern,28.48,21.98,4.45,5.8,10.86,12.91
+245,Nürnberg-Süd,Bayern,30.43,21.39,3.17,4.33,6.04,11.74
+246,Roth,Bayern,47.42,25.59,4.65,3.98,8.87,8.58
+247,Aschaffenburg,Bayern,38.44,17.68,4.36,2.92,6.93,8.52
+248,Bad Kissingen,Bayern,51.52,17.39,4.57,4.32,6.15,6.03
+249,Main-Spessart,Bayern,43.55,18.98,3.99,3.01,6.21,7.98
+250,Schweinfurt,Bayern,44.36,17.97,3.68,4.32,6.16,6.55
+251,Würzburg,Bayern,46.18,23.17,5.28,4.13,12.02,8.61
+252,Augsburg-Stadt,Bayern,35.92,18.26,3.85,4.6,8.68,12.37
+253,Augsburg-Land,Bayern,58.5,18.75,5.06,3.51,7.89,9.62
+254,Donau-Ries,Bayern,44.86,13.46,3.63,2.65,4.84,7.54
+255,Neu-Ulm,Bayern,52.66,18.07,4.66,3.71,6.48,10.62
+256,Oberallgäu,Bayern,50.36,15.42,5.45,3.47,8.92,8.28
+257,Ostallgäu,Bayern,57.06,15.55,4.78,3.28,7.34,8.72
+296,Saarbrücken,Saarland,28.96,26.97,3.89,10.13,6.79,14.14
+297,Saarlouis,Saarland,37.38,28.66,3.41,8.38,4.9,12.73
+298,St. Wendel,Saarland,34.18,25.44,2.81,7.56,3.79,13.27
+299,Homburg,Saarland,31.68,27.62,3.28,8.83,4.44,15.3
+75,Berlin-Mitte,Berlin,19.64,22.66,3.2,16.23,14.52,17.26
+76,Berlin-Pankow,Berlin,25.29,23.67,2.73,27.06,15.13,20.61
+77,Berlin-Reinickendorf,Berlin,32.71,21.52,3.55,6.47,7.11,15.05
+78,Berlin-Spandau - Charlottenburg Nord,Berlin,29.11,22.99,3.02,7.56,6.56,15.95
+79,Berlin-Steglitz - Zehlendorf,Berlin,40.15,27.62,6.88,7.74,14.62,14.35
+80,Berlin-Charlottenburg - Wilmersdorf,Berlin,30.68,25.56,6.44,8.37,14.52,14.76
+81,Berlin-Tempelhof - Schöneberg,Berlin,34.41,29.78,4.44,11.17,16.77,14.45
+82,Berlin-Neukölln,Berlin,24.92,22.54,2.57,12.25,11.93,14.57
+83,Berlin-Friedrichshain-Kreuzberg - Prenzlauer Berg Ost,Berlin,15.86,24.77,2.23,25.92,21.43,18.15
+84,Berlin-Treptow - Köpenick,Berlin,23.14,19.43,1.81,26.84,6.72,21.81
+85,Berlin-Marzahn - Hellersdorf,Berlin,21.13,15.63,1.42,26.78,3.15,24.51
+86,Berlin-Lichtenberg,Berlin,19.6,17.36,1.32,29.36,4.95,23.75
+56,Prignitz - Ostprignitz-Ruppin - Havelland I,Brandenburg,23.22,15.96,1.43,14.35,2.2,12.76
+57,Uckermark - Barnim I,Brandenburg,22.65,13.99,1.29,14.67,2.23,13.13
+58,Oberhavel - Havelland II,Brandenburg,39.34,25.9,3.19,19.94,6.14,18.53
+59,Märkisch-Oderland - Barnim II,Brandenburg,34.45,23.23,2.38,28.01,4.49,19.84
+60,Brandenburg an der Havel - Potsdam-Mittelmark I - Havelland III - Teltow-Fläming I,Brandenburg,25.83,19.92,1.73,17.38,2.85,14.29
+61,Potsdam - Potsdam-Mittelmark II - Teltow-Fläming II,Brandenburg,35.14,27.84,3.67,23.22,10.11,18.21
+62,Dahme-Spreewald - Teltow-Fläming III - Oberspreewald-Lausitz I,Brandenburg,36.02,23.52,2.82,22.6,4.62,18.33
+63,Frankfurt (Oder) - Oder-Spree,Brandenburg,27.58,18.45,1.82,20.46,3.28,19.33
+64,Cottbus - Spree-Neiße,Brandenburg,27.53,16.72,1.86,17.41,2.73,19.34
+65,Elbe-Elster - Oberspreewald-Lausitz II,Brandenburg,28.66,14.4,1.84,15.76,1.93,15.01
+12,Schwerin - Ludwigslust-Parchim I - Nordwestmecklenburg I,Mecklenburg-Vorpommern,36.78,19.65,2.06,18.59,4.07,13.09
+13,Ludwigslust-Parchim II - Nordwestmecklenburg II - Landkreis Rostock I,Mecklenburg-Vorpommern,35.44,16.58,1.87,17.93,3.39,12.54
+14,Rostock - Landkreis Rostock II,Mecklenburg-Vorpommern,35.6,18.06,1.81,22.28,6.15,14.33
+15,Vorpommern-Rügen - Vorpommern-Greifswald I,Mecklenburg-Vorpommern,43.38,14.09,2.53,19.88,4.59,14.58
+16,Mecklenburgische Seenplatte I - Vorpommern-Greifswald II,Mecklenburg-Vorpommern,40.94,13.45,1.81,19.71,2.5,13.46
+17,Mecklenburgische Seenplatte II - Landkreis Rostock III,Mecklenburg-Vorpommern,37.6,14.31,1.73,17.94,2.79,11.27
+151,Nordsachsen,Sachsen,30.8,10.56,1.81,14.13,1.96,13.67
+152,Leipzig I,Sachsen,31.43,15.74,2.51,18.13,5.89,16.63
+153,Leipzig II,Sachsen,30.85,17.92,2.85,21.35,10.63,15.54
+154,Leipzig-Land,Sachsen,42.55,14.12,2.67,18.5,3.05,13.99
+155,Meißen,Sachsen,40.23,11.22,3.27,16.64,3.56,15.78
+156,Bautzen I,Sachsen,43.16,11.52,2.94,18.86,2.65,15.59
+157,Görlitz,Sachsen,41.15,11.73,2.61,18.29,3.14,18.65
+158,Sächsische Schweiz - Osterzgebirge,Sachsen,41.51,9.88,2.9,15.47,3.21,17.12
+159,Dresden I,Sachsen,42.45,16.46,3.26,20.24,8.41,17.32
+160,Dresden II - Bautzen II,Sachsen,41.14,14.91,3.36,19.34,10.15,18.05
+161,Mittelsachsen,Sachsen,40.45,11.87,3.07,18.38,2.93,13.85
+162,Chemnitz,Sachsen,32.61,14.67,2.41,19.31,4.46,15.54
+163,Chemnitzer Umland - Erzgebirgskreis II,Sachsen,37.31,11.94,2.24,16.46,2.67,16.08
+164,Erzgebirgskreis I,Sachsen,45.51,12.52,3.63,19.14,2.47,16.58
+165,Zwickau,Sachsen,40.38,13.5,2.44,19.34,2.9,13.69
+166,Vogtlandkreis,Sachsen,37.64,13.62,2.39,17.19,2.84,15.04
+66,Altmark,Sachsen-Anhalt,27.8,12.57,1.42,16.3,2.2,8.57
+67,Börde - Jerichower Land,Sachsen-Anhalt,37.48,16.98,2.49,18.82,2.67,8.94
+68,Harz,Sachsen-Anhalt,35.25,15.19,1.84,18.6,2.94,8.7
+69,Magdeburg,Sachsen-Anhalt,35.47,19.77,2.3,22.71,5.29,11.15
+70,Dessau - Wittenberg,Sachsen-Anhalt,31.52,12.67,1.8,16.89,2.93,11.95
+71,Anhalt,Sachsen-Anhalt,35.71,14.46,2.21,22.05,2.22,11.57
+72,Halle,Sachsen-Anhalt,33.16,15.72,2.75,21.45,6.34,11.04
+73,Burgenland - Saalekreis,Sachsen-Anhalt,32.49,12.36,2.1,18.01,2.32,10.03
+74,Mansfeld,Sachsen-Anhalt,33.53,13.94,2.39,20.92,2.26,9.98
+189,Eichsfeld - Nordhausen - Unstrut-Hainich-Kreis I,Thüringen,36.87,12.56,2.28,16.39,3.3,11.81
+190,Eisenach - Wartburgkreis - Unstrut-Hainich-Kreis II,Thüringen,32.02,13.53,1.94,17.92,3.19,12.26
+191,Kyffhäuserkreis - Sömmerda - Weimarer Land I,Thüringen,30.57,12.06,2.29,19.19,2.95,14.66
+192,Gotha - Ilm-Kreis,Thüringen,33.12,14.83,2.04,19.15,3.99,19.38
+193,Erfurt - Weimar - Weimarer Land II,Thüringen,33.07,16.91,2.5,22.05,8.17,17.56
+194,Gera - Jena - Saale-Holzland-Kreis,Thüringen,35.91,16.36,2.9,26.37,7.12,19.05
+195,Greiz - Altenburger Land,Thüringen,29.62,10.09,1.89,16.29,2.39,17.91
+196,Sonneberg - Saalfeld-Rudolstadt - Saale-Orla-Kreis,Thüringen,34.15,14.32,2.21,22.3,3.39,17.88
+197,Suhl - Schmalkalden-Meiningen - Hildburghausen,Thüringen,31.79,13.05,1.94,20.01,3.18,12.84
