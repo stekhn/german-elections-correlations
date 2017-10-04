@@ -2,21 +2,32 @@
 
   'strict';
 
+  // Settings
+  var width = 170;
+  var height = 170;
+
+  var margin = {
+    top: 10,
+    right: 20,
+    bottom: 20,
+    left: 25
+  };
+
   (function init() {
 
     d3.queue()
-      .defer(d3.csv, 'data/results.csv')
-      .defer(d3.csv, 'data/demographics.csv')
-      .await(function (error, results, demographics) {
+      .defer(d3.csv, 'data/btw17-results.csv')
+      .defer(d3.csv, 'data/btw17-stats.csv')
+      .await(function (error, results, stats) {
 
         var correlations;
 
         if (error) { throw error; }
 
         results = transform(results);
-        demographics = transform(demographics);
+        stats = transform(stats);
 
-        correlations = correlate(results, demographics);
+        correlations = correlate(results, stats);
 
         draw(correlations);
       });
@@ -32,52 +43,53 @@
 
         var value = isNaN(row[column]) ? row[column] : parseFloat(row[column]);
 
-        if (value != '.') {
-          map[column] = map[column] || [];
-          map[column].push(value);
+        // Handle empty values
+        if (value === '' || value === '.' || value === '–' || value === '-99') {
+
+          value = undefined;
         }
+
+        map[column] = map[column] || [];
+        map[column].push(value);
       });
     });
 
     return map;
   }
 
-  function correlate(results, demographics) {
+  function correlate(results, stats) {
 
     var correlations = [];
 
-    Object.keys(results).forEach(function (res) {
+    Object.keys(results).forEach(function (r) {
 
-      Object.keys(demographics).forEach(function (dem) {
+      Object.keys(stats).forEach(function (s) {
 
-        // @todo: Could be nicer
-        if (res !== 'id' && res !== 'name' && res !== 'state' &&
-          dem !== 'id' && dem !== 'name' && dem !== 'state') {
+        // Correlate all datasets which are not id, name or state
+        if (r !== 'id' && r !== 'name' && r !== 'state' &&
+          s !== 'id' && s !== 'name' && s !== 'state') {
 
-          var correlation = ss.sampleCorrelation(results[res],demographics[dem]);
-          var regression = ss.linearRegression([results[res],demographics[dem]]);
-          var regressionLine = ss.linearRegressionLine(regression);
+          var correlation = ss.sampleCorrelation(results[r],stats[s]);
 
           correlations.push({
             correlation: correlation,
-            regression: regression,
-            line: regressionLine,
-            xName: res,
-            xValues: results[res],
-            xDomain: d3.extent(results[res]),
-            yName: dem,
-            yValues: demographics[dem],
-            yDomain: d3.extent(demographics[dem])
+            xName: r,
+            xDomain: d3.extent(results[r]),
+            yName: s,
+            yDomain: d3.extent(stats[s]),
+            values: pairValues(results[r], stats[s], stats.state)
           });
         }
       });
     });
 
+    // Sort correlations by their coefficient
     correlations.sort(function (a, b) {
 
       return d3.descending(Math.abs(a.correlation), Math.abs(b.correlation));
     });
 
+    // Limit displayed results to 50, because of performance issues
     correlations.length = 50;
 
     return correlations;
@@ -85,19 +97,7 @@
 
   function draw(correlations) {
 
-    var width, height, margin,
-      vis, x, y, xAxis, yAxis,
-      div, svg;
-
-    width = 170;
-    height = 170;
-
-    margin = {
-      top: 10,
-      right: 20,
-      bottom: 20,
-      left: 25
-    };
+    var vis, div;
 
     vis = d3.select('#vis');
 
@@ -113,82 +113,93 @@
             (Math.round(d.correlation * 100) / 100);
         });
 
-    svg = div.append('svg')
-        .attr('width', width + margin.left + margin.right)
-        .attr('height', height + margin.top + margin.bottom);
-
-    svg.append('g')
-        .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')')
+    div.append('svg')
         .each(handleEach);
+  }
 
-    function handleEach(d) {
+  function handleEach(d) {
 
-      var parent = d3.select(this);
+    var x, y, xAxis, yAxis, group;
 
-      x = d3.scaleLinear()
-        .range([0, width])
-        .domain([0, d.xDomain[1]]);
+    var svg = d3.select(this);
 
-      y = d3.scaleLinear()
-        .range([height, 0])
-        .domain(d.yDomain[0] > 0 ? [0, d.yDomain[1]] : d.yDomain);
+    x = d3.scaleLinear()
+      .range([0, width])
+      .domain([0, d.xDomain[1]]);
 
-      xAxis = d3.axisBottom(x)
-          .ticks(4);
+    y = d3.scaleLinear()
+      .range([height, 0])
+      .domain(d.yDomain[0] > 0 ? [0, d.yDomain[1]] : d.yDomain);
 
-      yAxis = d3.axisLeft(y)
-          .ticks(4);
+    xAxis = d3.axisBottom(x)
+        .ticks(4);
 
-      parent.append('g')
-          .call(yAxis);
-        // .append('text')
-        //   .attr('y', -20)
-        //   .attr('x', -20)
-        //   .attr('dy', '.71em')
-        //   .attr('text-anchor', 'start')
-        //   .attr('fill', 'black')
-        //   .text(d.yName);
+    yAxis = d3.axisLeft(y)
+        .ticks(4);
 
-      parent.append('g')
-          .attr('transform', 'translate(0,' + height + ')')
-          .call(xAxis)
-        .append('text')
-          .attr('x', width)
-          .attr('y', -6)
-          .attr('text-anchor', 'end')
-          .attr('fill', 'black')
-          .text(d.xName);
+    group = svg
+        .attr('width', width + margin.left + margin.right)
+        .attr('height', height + margin.top + margin.bottom)
+      .append('g')
+        .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
-      // parent.append('g')
-      //     .append('line')
-      //     .attr('x1', x(d.xDomain[d.correlation < 0 ? 1 : 0]))
-      //     .attr('y1', y(d.line(d.yDomain[0])))
-      //     .attr('x2', x(d.xDomain[d.correlation < 0 ? 0 : 1]))
-      //     .attr('y2', y(d.line(d.yDomain[1])))
-      //     .attr('stroke', 'black')
-      //     .attr('stroke-width', 1);
+    group.append('g')
+        .call(yAxis);
 
-      parent.append('g')
-          .attr('fill', function (e) {
+    group.append('g')
+        .attr('transform', 'translate(0,' + height + ')')
+        .call(xAxis)
+      .append('text')
+        .attr('x', width)
+        .attr('y', -6)
+        .attr('text-anchor', 'end')
+        .attr('fill', 'black')
+        .text(d.xName);
 
-            return getColor(e.xName) || 'black';
-          })
-        .selectAll('circle')
-          .data(function () {
-            return d.xValues.map(function (x, i) {
-              return {
-                x: x,
-                y: d.yValues[i]
-              };
-            });
-          })
-          .enter()
-        .append('circle')
-          .attr('r', 3)
-          .attr('fill-opacity', .5)
-          .attr('cx', function (e) { return x(e.x); })
-          .attr('cy', function (e) { return y(e.y); });
-    }
+    group.append('g')
+        .attr('fill', function (e) { return getColor(e.xName); })
+      .selectAll('circle')
+        .data(d.values)
+        .enter()
+      .append('circle')
+        .attr('r', 3)
+        .attr('fill-opacity', .5)
+        .attr('stroke', function (e) { return e.e ? '#000' : 'none'; })
+        .attr('stroke-opacity', .75)
+        .attr('cx', function (e) { return x(e.x); })
+        .attr('cy', function (e) { return y(e.y); });
+  }
+
+  function pairValues(results, stats, states) {
+
+    var values = [];
+
+    results.forEach(function (result, i) {
+
+      if (result && stats[i]) {
+
+        values.push({
+          x: result,
+          y: stats[i],
+          e: isEastGermany(states[i])
+        });
+      }
+    });
+
+    return values;
+  }
+
+  function isEastGermany(state) {
+
+    var east = [
+      'Brandenburg',
+      'Mecklenburg-Vorpommern',
+      'Sachsen',
+      'Sachsen-Anhalt',
+      'Thüringen'
+    ];
+
+    return east.indexOf(state) > -1;
   }
 
   function getColor(party) {
@@ -196,7 +207,6 @@
     party = party.replace(' (%)', '');
 
     var colors = {
-
       'AfD': '#129ee6',
       'Union': '#121212',
       'FDP': '#ffdd00',
