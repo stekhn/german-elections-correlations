@@ -1,6 +1,8 @@
 # Correlations for Germany’s 2017 election
 The German election 2017 showed a surge in support for the right-wing party AfD. Articles by several newspapers ([SZ](http://www.sueddeutsche.de/politik/bundestagswahl-je-mehr-autos-desto-mehr-stimmen-fuer-die-union-1.3682709), [NZZ](https://www.nzz.ch/international/wie-einkommen-arbeitslosigkeit-und-migration-das-wahlverhalten-mitbestimmen-ld.1318290)) have sparked a debate on whether election results can be explained by demographic and socio-economic factors. Generally speaking, correlation is not causation. However, a strong correlation can indicate a causal link. The small multiples scatter plot shows the strongest correlations between election results and socio-economic indicators for Germany's 299 constituencies.
 
+- **See it live**: https://stekhn.github.io/german-elections-correlations/src/
+
 ## Data 
 The data for election results and socio-economic indicators comes from the Federal Returning Officer (Bundeswahlleiter). The data has been refined and filtered to .
 
